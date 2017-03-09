@@ -237,3 +237,28 @@ class TestS3Bucket(AWSMockServiceTestCase):
         document = xml.dom.minidom.parseString(xml_policy)
         namespace = document.documentElement.namespaceURI
         self.assertEqual(namespace, 'http://s3.amazonaws.com/doc/2006-03-01/')
+
+    def s3_policy(self):
+        return """{
+          "Version":"2012-10-17",
+          "Statement":[
+            {
+              "Sid":"AddCannedAcl",
+              "Effect":"Allow",
+              "Principal": {"AWS": ["arn:aws:iam::111122223333:root","arn:aws:iam::444455556666:root"]},
+              "Action":["s3:PutObject","s3:PutObjectAcl"],
+              "Resource":["arn:aws:s3:::examplebucket/*"],
+              "Condition":{"StringEquals":{"s3:x-amz-acl":["public-read"]}}
+            }
+          ]
+        }"""
+
+    def test_get_policy(self):
+        self.set_http_response(status_code=200)
+        bucket = self.service_connection.get_bucket('mybucket')
+
+        self.set_http_response(status_code=200, body=self.s3_policy().encode('utf-8'))
+        policy = bucket.get_policy()
+
+        self.assertNotIsInstance(policy, six.string_types)
+        self.assertEqual(policy, self.s3_policy())

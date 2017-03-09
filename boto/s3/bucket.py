@@ -1567,7 +1567,7 @@ class Bucket(object):
         """
         response = self.connection.make_request('GET', self.name,
                 query_args='policy', headers=headers)
-        body = response.read()
+        body = response.read().decode('utf-8')
         if response.status == 200:
             return body
         else:
