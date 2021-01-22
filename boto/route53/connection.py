@@ -123,8 +123,6 @@ class Route53Connection(AWSAuthConnection):
         body = response.read()
         boto.log.debug(body)
         pprint('Body is:')
-        pprint('aaaaa')
-        pprint(response.__dict__)
 
         d = dir(body)
         pprint('3 Body is:')
