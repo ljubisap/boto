@@ -29,6 +29,8 @@ import random
 import uuid
 import xml.sax
 
+from pprint import pprint
+
 import boto
 from boto.connection import AWSAuthConnection
 from boto import handler
@@ -120,6 +122,23 @@ class Route53Connection(AWSAuthConnection):
                                      params=params)
         body = response.read()
         boto.log.debug(body)
+        l = body.__dict__
+        pprint('Body is:')
+        boto.log.debug(l)
+        pprint('2. Body is:')
+        pprint(l)
+        pprint('aaaaa')
+        pprint(response.__dict__)
+
+        d = dir(body)
+        pprint('3 Body is:')
+        boto.log.debug(d)
+        pprint('4 Body is:')
+        pprint(d)
+        pprint('bbb')
+        pprint(dir(response))
+
+        response
         if response.status >= 300:
             raise exception.DNSServerError(response.status,
                                            response.reason,
