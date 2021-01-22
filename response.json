@@ -1,0 +1,402 @@
+"module_stdout": "'Body is:'
+'aaaaa'
+{'_cached_response': b'<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http:'
+                     b'//www.w3.org/TR/html4/strict.dtd\">\
+<html><head>\
+<met'
+                     b'a type=\"copyright\" content=\"Copyright (C) 1996-2020 The '
+                     b'Squid Software Foundation and contributors\">\
+<meta h'
+                     b'ttp-equiv=\"Content-Type\" content=\"text/html; charset=utf'
+                     b'-8\">\
+<title>ERROR: The requested URL could not be re'
+                     b'trieved</title>\
+<style type=\"text/css\"><!--\
+ /*\
+ * C'
+                     b'opyright (C) 1996-2020 The Squid Software Foundation and'
+                     b' contributors\
+ *\
+ * Squid software is distributed un'
+                     b'der GPLv2+ license and includes\
+ * contributions fro'
+                     b'm numerous individuals and organizations.\
+ * Please '
+                     b'see the COPYING and CONTRIBUTORS files for details.\
+'
+                     b' */\
+\
+/*\
+ Stylesheet for Squid Error pages\
+ Adapted f'
+                     b'rom design by Free CSS Templates\
+ http://www.freecss'
+                     b'templates.org\
+ Released for free under a Creative Co'
+                     b'mmons Attribution 2.5 License\
+*/\
+\
+/* Page basics */\
+'
+                     b'* {\
+\\tfont-family: verdana, sans-serif;\
+}\
+\
+html b'
+                     b'ody {\
+\\tmargin: 0;\
+\\tpadding: 0;\
+\\tbackground: #efe'
+                     b'fef;\
+\\tfont-size: 12px;\
+\\tcolor: #1e1e1e;\
+}\
+\
+/* Pa'
+                     b'ge displayed title area */\
+#titles {\
+\\tmargin-left: 1'
+                     b'5px;\
+\\tpadding: 10px;\
+\\tpadding-left: 100px;\
+\\tback'
+                     b\"ground: url('/squid-internal-static/icons/SN.png') no-re\"
+                     b'peat left;\
+}\
+\
+/* initial title */\
+#titles h1 {\
+\\t'
+                     b'color: #000000;\
+}\
+#titles h2 {\
+\\tcolor: #000000;\
+'
+                     b'}\
+\
+/* special event: FTP success page titles */\
+#tit'
+                     b'les ftpsuccess {\
+\\tbackground-color:#00ff00;\
+\\twidth:1'
+                     b'00%;\
+}\
+\
+/* Page displayed body content area */\
+#cont'
+                     b'ent {\
+\\tpadding: 10px;\
+\\tbackground: #ffffff;\
+}\
+\
+/'
+                     b'* General text */\
+p {\
+}\
+\
+/* error brief description '
+                     b'*/\
+#error p {\
+}\
+\
+/* some data which may have caused '
+                     b'the problem */\
+#data {\
+}\
+\
+/* the error message recei'
+                     b'ved from the system or other software */\
+#sysmsg {\
+}'
+                     b'\
+\
+pre {\
+}\
+\
+/* special event: FTP / Gopher direct'
+                     b'ory listing */\
+#dirmsg {\
+    font-family: courier, m'
+                     b'onospace;\
+    color: black;\
+    font-size: 10pt;\
+}\
+#'
+                     b'dirlisting {\
+    margin-left: 2%;\
+    margin-right: '
+                     b'2%;\
+}\
+#dirlisting tr.entry td.icon,td.filename,td.si'
+                     b'ze,td.date {\
+    border-bottom: groove;\
+}\
+#dirlistin'
+                     b'g td.size {\
+    width: 50px;\
+    text-align: right;\
+'
+                     b'    padding-right: 5px;\
+}\
+\
+/* horizontal lines */\
+hr'
+                     b' {\
+\\tmargin: 0;\
+}\
+\
+/* page displayed footer area '
+                     b'*/\
+#footer {\
+\\tfont-size: 9px;\
+\\tpadding-left: 10p'
+                     b'x;\
+}\
+\
+\
+body\
+:lang(fa) { direction: rtl; font-siz'
+                     b'e: 100%; font-family: Tahoma, Roya, sans-serif; float: r'
+                     b'ight; }\
+:lang(he) { direction: rtl; }\
+ --></style>\
+<'
+                     b'/head><body id=ERR_ACCESS_DENIED>\
+<div id=\"titles\">\
+'
+                     b'<h1>ERROR</h1>\
+<h2>The requested URL could not be re'
+                     b'trieved</h2>\
+</div>\
+<hr>\
+\
+<div id=\"content\">\
+<p>'
+                     b'The following error was encountered while trying to retr'
+                     b'ieve the URL: <a href=\"https://route53.amazonaws.com/201'
+                     b'3-04-01/hostedzone\">https://route53.amazonaws.com/2013-0'
+                     b'4-01/hostedzone</a></p>\
+\
+<blockquote id=\"error\">\
+<p>'
+                     b'<b>Access Denied.</b></p>\
+</blockquote>\
+\
+<p>Access c'
+                     b'ontrol configuration prevents your request from being al'
+                     b'lowed at this time. Please contact your service provider'
+                     b' if you feel this is incorrect.</p>\
+\
+<p>Your cache a'
+                     b'dministrator is <a href=\"mailto:webmaster?subject=CacheE'
+                     b'rrorInfo%20-%20ERR_ACCESS_DENIED&amp;body=CacheHost%3A%2'
+                     b'0modelt-sre-test-squid-77d5f7c7bc-tdn2w%0D%0AErrPage%3A%'
+                     b'20ERR_ACCESS_DENIED%0D%0AErr%3A%20%5Bnone%5D%0D%0ATimeSt'
+                     b'amp%3A%20Fri,%2022%20Jan%202021%2017%3A09%3A12%20GMT%0D%'
+                     b'0A%0D%0AClientIP%3A%20172.23.6.6%0D%0A%0D%0AHTTP%20Reque'
+                     b'st%3A%0D%0AGET%20%2F2013-04-01%2Fhostedzone%20HTTP%2F1.1'
+                     b'%0AAccept-Encoding%3A%20identity%0D%0AUser-Agent%3A%20Bo'
+                     b'to%2F2.46.1%20Python%2F3.6.12%20Linux%2F4.19.150+%0D%0AD'
+                     b'ate%3A%20Fri,%2022%20Jan%202021%2017%3A09%3A12%20GMT%0D%'
+                     b'0AX-Amzn-Authorization%3A%20AWS3-HTTPS%20AWSAccessKeyId%'
+                     b'3DAKIARX4RDRFKI6MNJNIP,Algorithm%3DHmacSHA256,Signature%'
+                     b'3Dr2N93bmAqxc4k4ldZgR6UJHLv2IOqI4hwdLo%2FpXFkyU%3D%0D%0A'
+                     b'Content-Length%3A%200%0D%0AHost%3A%20route53.amazonaws.c'
+                     b'om%0D%0A%0D%0A%0D%0A\">webmaster</a>.</p>\
+<br>\
+</div>'
+                     b'\
+\
+<hr>\
+<div id=\"footer\">\
+<p>Generated Fri, 22 Jan 20'
+                     b'21 17:09:12 GMT by modelt-sre-test-squid-77d5f7c7bc-tdn2'
+                     b'w (squid/4.10)</p>\
+<!-- ERR_ACCESS_DENIED -->\
+</div>'
+                     b'\
+</body></html>\
+',
+ '_method': 'GET',
+ 'chunk_left': 'UNKNOWN',
+ 'chunked': False,
+ 'code': 403,
+ 'debuglevel': 0,
+ 'fp': None,
+ 'headers': <http.client.HTTPMessage object at 0x7f5276c0c5c0>,
+ 'length': 0,
+ 'msg': <http.client.HTTPMessage object at 0x7f5276c0c5c0>,
+ 'reason': 'Forbidden',
+ 'status': 403,
+ 'version': 11,
+ 'will_close': True}
+'3 Body is:'
+'4 Body is:'
+['__add__',
+ '__class__',
+ '__contains__',
+ '__delattr__',
+ '__dir__',
+ '__doc__',
+ '__eq__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__getitem__',
+ '__getnewargs__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__iter__',
+ '__le__',
+ '__len__',
+ '__lt__',
+ '__mod__',
+ '__mul__',
+ '__ne__',
+ '__new__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__rmod__',
+ '__rmul__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ 'capitalize',
+ 'center',
+ 'count',
+ 'decode',
+ 'endswith',
+ 'expandtabs',
+ 'find',
+ 'fromhex',
+ 'hex',
+ 'index',
+ 'isalnum',
+ 'isalpha',
+ 'isdigit',
+ 'islower',
+ 'isspace',
+ 'istitle',
+ 'isupper',
+ 'join',
+ 'ljust',
+ 'lower',
+ 'lstrip',
+ 'maketrans',
+ 'partition',
+ 'replace',
+ 'rfind',
+ 'rindex',
+ 'rjust',
+ 'rpartition',
+ 'rsplit',
+ 'rstrip',
+ 'split',
+ 'splitlines',
+ 'startswith',
+ 'strip',
+ 'swapcase',
+ 'title',
+ 'translate',
+ 'upper',
+ 'zfill']
+'bbb'
+['__abstractmethods__',
+ '__class__',
+ '__del__',
+ '__delattr__',
+ '__dict__',
+ '__dir__',
+ '__doc__',
+ '__enter__',
+ '__eq__',
+ '__exit__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__gt__',
+ '__hash__',
+ '__init__',
+ '__init_subclass__',
+ '__iter__',
+ '__le__',
+ '__lt__',
+ '__module__',
+ '__ne__',
+ '__new__',
+ '__next__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__subclasshook__',
+ '_abc_cache',
+ '_abc_negative_cache',
+ '_abc_negative_cache_version',
+ '_abc_registry',
+ '_cached_response',
+ '_checkClosed',
+ '_checkReadable',
+ '_checkSeekable',
+ '_checkWritable',
+ '_check_close',
+ '_close_conn',
+ '_get_chunk_left',
+ '_method',
+ '_peek_chunked',
+ '_read1_chunked',
+ '_read_and_discard_trailer',
+ '_read_next_chunk_size',
+ '_read_status',
+ '_readall_chunked',
+ '_readinto_chunked',
+ '_safe_read',
+ '_safe_readinto',
+ 'begin',
+ 'chunk_left',
+ 'chunked',
+ 'close',
+ 'closed',
+ 'code',
+ 'debuglevel',
+ 'detach',
+ 'fileno',
+ 'flush',
+ 'fp',
+ 'getcode',
+ 'getheader',
+ 'getheaders',
+ 'geturl',
+ 'headers',
+ 'info',
+ 'isatty',
+ 'isclosed',
+ 'length',
+ 'msg',
+ 'peek',
+ 'read',
+ 'read1',
+ 'readable',
+ 'readinto',
+ 'readinto1',
+ 'readline',
+ 'readlines',
+ 'reason',
+ 'seek',
+ 'seekable',
+ 'status',
+ 'tell',
+ 'truncate',
+ 'version',
+ 'will_close',
+ 'writable',
+ 'write',
+ 'writelines']
+",
+
