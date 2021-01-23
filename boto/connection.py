@@ -801,13 +801,13 @@ class AWSAuthConnection(object):
             # See discussion about this config option at
             # https://groups.google.com/forum/?fromgroups#!topic/boto-dev/teenFvOq2Cc
             if config.getbool('Boto', 'send_crlf_after_proxy_auth_headers', False):
-                sock.sendall(("\r\n").encode())
+                sock.sendall(b'\r\n')
         else:
-            sock.sendall(("\r\n").encode())
-        kwargs = {'sock': sock, 'debuglevel': self.debug}
+            sock.sendall(b'\r\n')
+        kwargs = {}
         if six.PY2:
             kwargs['strict'] = True
-        resp = http_client.HTTPResponse(**kwargs)
+        resp = http_client.HTTPResponse(sock, debuglevel=self.debug, **kwargs)
         resp.begin()
 
         if resp.status != 200:
