@@ -148,6 +148,11 @@ class Route53Connection(AWSAuthConnection):
             next_marker = e['ListHostedZonesResponse']['NextMarker']
             zone_list = e['ListHostedZonesResponse']['HostedZones']
             e = self.get_all_hosted_zones(next_marker, zone_list)
+
+        pprint('Element is:')
+        pprint(e)
+        pprint('Element is:')
+
         return e
 
     def get_hosted_zone(self, hosted_zone_id):
