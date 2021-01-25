@@ -801,9 +801,9 @@ class AWSAuthConnection(object):
             # See discussion about this config option at
             # https://groups.google.com/forum/?fromgroups#!topic/boto-dev/teenFvOq2Cc
             if config.getbool('Boto', 'send_crlf_after_proxy_auth_headers', False):
-                sock.sendall(b'\r\n')
+                sock.sendall(("\r\n").encode())
         else:
-            sock.sendall(b'\r\n')
+            sock.sendall(("\r\n").encode())
         kwargs = {}
         if six.PY2:
             kwargs['strict'] = True
